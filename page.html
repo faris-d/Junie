@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="style/css" href="./resources/reset.css">
+        <link rel="stylesheet" type="text/css" href="./resources/style.css">
+        <title>Junie Actions</title>
+        <script>
+            const junieActions = [
+                    'boof',
+                    'bark',
+                    'beg',
+                    'drink',
+                    'eat',
+                    'fart',
+                    'pee',
+                    'poop',
+                    'sneeze',
+                    'sleep',
+                    'walk',
+                    'wimper',
+                    'jump'
+            ];
+            
+            function junieAction() {
+                    let index = Math.floor(Math.random() * junieActions.length);
+                    let action = junieActions[index];
+                    document.querySelector('h3').innerHTML = action;
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Junie Actions</h2>
+        <div>
+            <img src='./resources/pics/junie_front.jpeg' width="100" height="110">
+            <img src='./resources/pics/junie_side.jpeg' width="100" height="110">
+        </div>
+        <button type="button" onclick="junieAction()">Click Me!</button>
+        <h3></h3>
+    </body>
+</html>
